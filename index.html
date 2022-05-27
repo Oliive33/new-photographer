@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page web new génération d'un portfolio de photographe, en css et javascript avec scrollreveal, homemade-web follow your dreams."
+    />
+    <title>New website photographer</title>
+    <!-- REMIXICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/icones/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/icones/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/icones/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/icones/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/images/icones/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- === HEADER === -->
+    <header class="header">
+      <nav class="navbar container">
+        <a href="./index.html" class="navbar__logo">
+          <img
+            src="./assets/images/Paul-Picture.svg"
+            alt="logo"
+            class="navbar__logo-image"
+          />
+        </a>
+        <div class="navbar__menu">
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a href="#home" class="navbar__list-link">Accueil</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#portfolio" class="navbar__list-link">Portfolio</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#services" class="navbar__list-link">Services</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#about" class="navbar__list-link">A Propos</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#blog" class="navbar__list-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__btn-group">
+          <a
+            href="mailto:contact@homemade-web.com"
+            class="btn btn--text btn--transparent"
+            >Me Contacter</a
+          >
+          <button type="button" class="btn btn--action" id="menu-toggler">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z"
+                fill="rgba(255,255,255,1)"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- <div class="demo"></div> -->
+    <!-- === MAIN === -->
+    <main>
+      <!-- === SHOWCASE === -->
+      <section class="showcase" id="home">
+        <div class="showcase__container container">
+          <h1 class="showcase__title title title--main">
+            Bonjour, Je suis Paul Picture, photographe professionnel.
+          </h1>
+          <picture class="showcase__image">
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/Webp1.png"
+            />
+            <img src="./assets/images/Webp2.png" alt="image home" />
+          </picture>
+        </div>
+      </section>
+      <!-- === PORTFOLIO === -->
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio__container container">
+          <div class="portfolio__metadata section-metadata">
+            <h2 class="title">Mes Réalisations</h2>
+          </div>
+          <div class="swiper myswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/510x510"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/501x501"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/502x502"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/503x503"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/504x504"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/505x505"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/506x506"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/507x507"
+                  alt="image realisation"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://source.unsplash.com/508x508"
+                  alt="image realisation"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- === SERVICES === -->
+      <section class="services" id="services">
+        <div class="services__container container">
+          <div class="services__metadata section-metadata">
+            <h2 class="title">Services que je propose</h2>
+            <p class="section-metadata__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium animi voluptatem libero illo ratione totam velit cum,
+              sequi magnam aut commodi dolorum molestias! Ipsa quas consequatur
+              cumque quae rerum enim.
+            </p>
+          </div>
+          <div class="services__image-wrapper">
+            <img src="./assets/images/photographer.jpg" alt="profil" />
+          </div>
+          <div class="services__list">
+            <div class="services__list-divider">
+              <article class="services__list-item">
+                <i class="ri-camera-line services__list-icon"></i>
+                <h3 class="services__list-title title">Photographie</h3>
+                <p class="services__list-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing. fugiat
+                  cumque, blanditiis dignissimos rerum minima consectetur. Magni
+                  voluptatem magnam atque alias, deserunt minima dolorum quae.
+                </p>
+              </article>
+              <article class="services__list-item">
+                <i class="ri-vidicon-fill services__list-icon"></i>
+                <h3 class="services__list-title title">Videographie</h3>
+                <p class="services__list-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing. fugiat
+                  cumque, blanditiis dignissimos rerum minima consectetur. Magni
+                  voluptatem magnam atque alias, deserunt minima dolorum quae.
+                </p>
+              </article>
+            </div>
+            <article class="services__list-item">
+              <i class="ri-flight-takeoff-line services__list-icon"></i>
+              <h3 class="services__list-title title">Photographie Aérienne</h3>
+              <p class="services__list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing. fugiat
+                cumque, blanditiis dignissimos rerum minima consectetur. Magni
+                voluptatem magnam atque alias, deserunt minima dolorum quae.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- === ABOUT === -->
+      <section class="about" id="about">
+        <div class="about__container container">
+          <div class="about__information">
+            <h2 class="about__information-title title">A Propos de moi</h2>
+            <p class="about__information-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              harum deserunt porro a magni consectetur, aliquam nesciunt
+              necessitatibus est atque pariatur, ea id fuga perspiciatis? Fugiat
+            </p>
+            <p class="about__information-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              harum deserunt porro a magni consectetur, aliquam nesciunt
+              necessitatibus est atque pariatur, ea id fuga perspiciatis? Fugiat
+            </p>
+            <a href="#" class="btn btn--text btn-green">Lire plus</a>
+          </div>
+          <div class="about__images">
+            <img
+              src="./assets/images/about_image_top.png"
+              alt="about"
+              class="about__images-image about__images-image--top"
+            />
+            <img
+              src="./assets/images/about_image_bottom.png"
+              alt="about"
+              class="about__images-image about__images-image--bottom"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- === BLOG === -->
+      <section class="blog" id="blog">
+        <div class="blog__container container">
+          <div class="blog__metadata section-metadata">
+            <h2 class="title">Les derniers post du blog</h2>
+            <p class="blog__metadata-description section-metadata__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium animi voluptatem libero illo ratione totam velit cum,
+              sequi magnam aut commodi dolorum molestias! Ipsa quas consequatur
+              cumque quae rerum enim.
+            </p>
+            <a href="#" class="btn btn--text btn--transparent"
+              >Voir tout les posts</a
+            >
+          </div>
+          <article class="blog__post post--left">
+            <picture class="blog__post-image">
+              <source
+                media="(min-width: 450px)"
+                srcset="./assets/images/blog_post_1.jpg"
+              />
+              <img src="./assets/images/blog_post_1-small.jpg" alt="post" />
+            </picture>
+            <h3 class="blog__post-title title">Lorem ipsum dolor</h3>
+            <a href="#" class="btn btn--text btn--transparent">Lire plus</a>
+          </article>
+          <article class="blog__post post--right">
+            <picture class="blog__post-image">
+              <source
+                media="(min-width: 450px)"
+                srcset="./assets/images/blog_post_2.jpg"
+              />
+              <img src="./assets/images/blog_post_2-small.jpg" alt="post" />
+            </picture>
+            <h3 class="blog__post-title title">Lorem ipsum dolor</h3>
+            <a href="#" class="btn btn--text btn--transparent">Lire plus</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__group">
+          <h2 class="footer__title title title--main">
+            Vous cherchez un photographe professionnel ?
+          </h2>
+          <a
+            href="mailto:contact@homemade-web.com"
+            class="btn btn--text btn--transparent"
+            >Lire plus</a
+          >
+        </div>
+        <span class="footer__separator"></span>
+        <div class="footer__group">
+          <a href="./index.html" class="footer__logo">
+            <img src="./assets/images/Paul-Picture.svg" alt="logo" />
+          </a>
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            nisi veritatis ex aperiam eos deleniti accusamus porro quisquam quas
+            animi tempore, omnis pariatur a, qui culpa illum ab, aspernatur
+            minus.
+          </p>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="https://github.com/Oliive33" class="footer__list-link">
+                <i class="ri-github-fill"></i>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a
+                href="https://www.linkedin.com/in/olivier33/"
+                class="footer__list-link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a
+                href="https://www.instagram.com/oliive33/"
+                class="footer__list-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+          </ul>
+          <span class="footer__copyright">
+            &copy; Oliive33 2022. | Follow your dreams
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- SWIPERJS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
